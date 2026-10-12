@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Scratch Tattoo | Estudio de Tatuajes en Fuenlabrada</title>
+<meta name="description" content="The Scratch Tattoo, estudio de tatuajes en C. de Cruz de Luisa 11, Fuenlabrada. Realismo black & grey y color con Mario, línea fina con Laura y diseños personalizados. 4,8★ con 47 reseñas en Google.">
+<meta name="theme-color" content="#0c0c0d">
+<meta property="og:title" content="The Scratch Tattoo · Fuenlabrada">
+<meta property="og:description" content="Estudio de tatuajes en Fuenlabrada. Realismo, color y línea fina. 4,8★ en Google.">
+<meta property="og:image" content="maps_02.jpg">
+<link rel="icon" href="maps_02.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0c0c0d;
+    --black-2:#151517;
+    --red:#e4572e;
+    --gold:#f2d0a4;
+    --cream:#f4f1ec;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;scroll-padding-top:70px;}
+  body{font-family:'Inter',sans-serif;background:#fff;color:var(--black);line-height:1.65;overflow-x:hidden;}
+  h1,h2{font-family:'Syne',sans-serif;font-weight:400;letter-spacing:.02em;}
+  a{color:inherit;text-decoration:none;}
+  img{display:block;max-width:100%;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
+
+  header{position:sticky;top:0;z-index:50;background:var(--black);color:#fff;border-bottom:1px solid #222;}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1140px;margin:0 auto;gap:20px;}
+  .logo{font-family:'Syne',sans-serif;font-size:1.9rem;line-height:1;color:var(--red);}
+  .logo span{color:var(--gold);font-family:'Syne',sans-serif;font-size:1.1rem;letter-spacing:.2em;margin-left:6px;}
+  nav ul{list-style:none;display:flex;gap:28px;}
+  nav ul a{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;opacity:.85;}
+  nav ul a:hover{opacity:1;color:var(--gold);}
+  .nav-cta{background:var(--red);color:#fff;padding:10px 18px;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;}
+  .nav-cta:hover{background:#bf4321;}
+
+  .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--black);}
+  .hero-bg{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;}
+  @media(max-width:760px){.hero-bg{grid-template-columns:1fr}.hero-bg img:not(:first-child){display:none}}
+  .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,13,13,.97) 8%,rgba(13,13,13,.6) 55%,rgba(13,13,13,.4) 100%);}
+  .hero-content{position:relative;z-index:2;padding:80px 24px 64px;max-width:1140px;margin:0 auto;width:100%;}
+  .hero-tag{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:6px 14px;font-size:.72rem;text-transform:uppercase;letter-spacing:.15em;margin-bottom:20px;}
+  .hero h1{font-size:clamp(3rem,8vw,6rem);line-height:.92;margin-bottom:18px;}
+  .hero h1 em{font-style:normal;color:var(--red);}
+  .hero p{max-width:560px;font-size:1.08rem;opacity:.9;margin-bottom:30px;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{display:inline-block;padding:15px 30px;font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;transition:.2s;text-align:center;}
+  .btn-primary{background:var(--red);color:#fff;}
+  .btn-primary:hover{background:#bf4321;}
+  .btn-outline{border:1px solid #fff;color:#fff;}
+  .btn-outline:hover{background:#fff;color:var(--black);}
+  .btn-gold{border:1px solid var(--gold);color:var(--gold);}
+  .btn-gold:hover{background:var(--gold);color:var(--black);}
+
+  .stats{background:var(--black);color:#fff;padding:36px 0;border-top:1px solid #2a2a2a;}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:20px;}
+  .stats b{display:block;font-family:'Syne',sans-serif;font-weight:400;font-size:2.6rem;line-height:1.1;color:var(--gold);}
+  .stats span{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;opacity:.75;}
+
+  section{padding:90px 0;}
+  .section-tag{color:var(--red);text-transform:uppercase;font-size:.75rem;letter-spacing:.15em;font-weight:700;margin-bottom:10px;display:block;}
+  .section-title{font-size:clamp(2.3rem,4.6vw,3.4rem);line-height:1;margin-bottom:16px;}
+  .section-desc{max-width:600px;color:#555;margin-bottom:50px;}
+
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ddd;border-block:1px solid #ddd;}
+  .service-card{background:#fff;padding:38px 30px;}
+  .service-num{font-family:'Syne',sans-serif;color:var(--red);font-size:1.5rem;margin-bottom:10px;}
+  .service-card h3{font-size:1.5rem;margin-bottom:8px;font-family:'Syne',sans-serif;font-weight:400;letter-spacing:.02em;}
+  .service-card p{color:#555;font-size:.94rem;}
+
+  .portfolio{background:var(--black);color:#fff;}
+  .portfolio .section-desc{color:#bbb;}
+  .portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .portfolio-grid figure{overflow:hidden;cursor:zoom-in;}
+  .portfolio-grid img{width:100%;height:420px;object-fit:cover;transition:transform .5s;}
+  .portfolio-grid figure:hover img{transform:scale(1.05);}
+  .ig-line{margin-top:34px;text-align:center;}
+
+  .gallery{background:var(--black-2);color:#fff;border-top:1px solid #2a2a2a;}
+  .gallery .section-desc{color:#bbb;}
+  .gallery-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:16px;}
+  .gallery-grid img{width:100%;height:480px;object-fit:cover;}
+
+  .why{background:#fff;}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;}
+  .why-card{border-top:3px solid var(--red);padding-top:18px;}
+  .why-card h3{font-size:1.35rem;font-family:'Syne',sans-serif;font-weight:400;margin-bottom:6px;letter-spacing:.02em;}
+  .why-card p{color:#666;font-size:.9rem;}
+
+  .steps{background:var(--cream);}
+  .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;counter-reset:step;}
+  .step::before{counter-increment:step;content:counter(step,decimal-leading-zero);font-family:'Syne',sans-serif;font-size:3rem;color:var(--red);opacity:.7;}
+  .step h3{font-size:1.3rem;font-family:'Syne',sans-serif;font-weight:400;margin:4px 0 6px;letter-spacing:.02em;}
+  .step p{color:#666;font-size:.88rem;}
+
+  .gift{background:var(--black);color:#fff;}
+  .gift-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center;}
+  .gift-grid img{width:100%;max-height:520px;object-fit:cover;}
+  .gift p{color:#ccc;margin-bottom:26px;max-width:520px;}
+
+  .testimonials{background:#fff;}
+  .test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .test-card{background:var(--cream);padding:30px;border-left:3px solid var(--red);}
+  .stars{color:var(--gold);margin-bottom:12px;letter-spacing:2px;}
+  .test-card p{font-size:.95rem;color:#444;margin-bottom:18px;font-style:italic;}
+  .test-name{font-weight:700;font-size:.88rem;}
+
+  .contact{background:var(--black);color:#fff;}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:stretch;}
+  .info-row{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #2a2a2a;}
+  .info-row .ic{font-size:1.1rem;width:24px;flex-shrink:0;}
+  .info-row b{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--gold);margin-bottom:4px;}
+  .info-row span,.info-row a{color:#ddd;font-size:.95rem;}
+  .info-row a:hover{color:var(--gold);}
+  .contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;}
+  .btn-wa{background:#25D366;color:#06280f;}
+  .map-embed{overflow:hidden;min-height:380px;}
+  .map-embed iframe{width:100%;height:100%;border:0;min-height:380px;}
+
+  footer{background:#060606;color:#888;padding:34px 0;text-align:center;font-size:.82rem;}
+  footer strong{color:#ccc;}
+  .lightbox{display:none;position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.94);align-items:center;justify-content:center;padding:24px;cursor:zoom-out;}
+  .lightbox.open{display:flex;} .lightbox img{max-height:90vh;}
+
+  .wa-float{position:fixed;bottom:24px;right:24px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);z-index:60;}
+  .wa-float svg{width:30px;height:30px;fill:#fff;}
+
+  @media(max-width:960px){
+    .portfolio-grid{grid-template-columns:repeat(2,1fr);}
+    .portfolio-grid img{height:340px;}
+  }
+  @media(max-width:860px){
+    nav ul{display:none;}
+    .stats .wrap{grid-template-columns:repeat(2,1fr);}
+    .services-grid{grid-template-columns:1fr;}
+    .why-grid{grid-template-columns:repeat(2,1fr);}
+    .steps-grid{grid-template-columns:repeat(2,1fr);}
+    .test-grid{grid-template-columns:1fr;}
+    .contact-grid,.gift-grid{grid-template-columns:1fr;}
+    .gallery-grid{grid-template-columns:1fr;}
+    .gallery-grid img{height:320px;}
+  }
+  @media(max-width:520px){
+    .logo{font-size:1.5rem;} .logo span{display:none;}
+    .portfolio-grid{grid-template-columns:1fr;}
+    .portfolio-grid img{height:400px;}
+    .why-grid,.steps-grid{grid-template-columns:1fr;}
+    .hero-actions .btn{flex:1 1 100%;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#" class="logo">The Scratch<span>Tattoo</span></a>
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#portafolio">Trabajos</a></li>
+      <li><a href="#estudio">Estudio</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="nav-cta" href="https://wa.me/34619579116?text=Hola!%20He%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20un%20tatuaje" target="_blank" rel="noopener">Pide cita</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-bg" role="img" aria-label="Tatuajes realistas hechos en The Scratch Tattoo"><img src="maps_02.jpg" alt=""><img src="maps_03.jpg" alt=""><img src="maps_04.jpg" alt=""></div>
+  <div class="hero-content">
+    <span class="hero-tag">Fuenlabrada · Estudio de tatuajes</span>
+    <h1>Tu idea,<br><em>en la piel</em></h1>
+    <p>Realismo en black &amp; grey y color con Mario, línea fina con Laura y diseños hechos a partir de tus ideas. Un estudio acogedor y muy limpio en la calle Cruz de Luisa.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://wa.me/34619579116?text=Hola!%20He%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20un%20tatuaje" target="_blank" rel="noopener">Pide tu cita</a>
+      <a class="btn btn-outline" href="#portafolio">Ver trabajos</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap">
+    <div><b>4,8★</b><span>Valoración Google</span></div>
+    <div><b>47</b><span>Reseñas reales</span></div>
+    <div><b>Realismo</b><span>Black &amp; grey y color</span></div>
+    <div><b>Fine line</b><span>Línea fina</span></div>
+  </div>
+</div>
+
+<section id="servicios">
+  <div class="wrap">
+    <span class="section-tag">Qué hacemos</span>
+    <h2 class="section-title">Nuestros estilos</h2>
+    <p class="section-desc">Escuchamos tus ideas, te asesoramos y diseñamos contigo la pieza, también tatuajes con un significado especial.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card"><div class="service-num">I</div><h3>Realismo black &amp; grey</h3><p>Piezas con mucho volumen, sombras y detalle, como retratos y calaveras.</p></div>
+    <div class="service-card"><div class="service-num">II</div><h3>Realismo a color</h3><p>Color intenso que da vida a tus diseños.</p></div>
+    <div class="service-card"><div class="service-num">III</div><h3>Línea fina</h3><p>Tatuajes delicados de línea fina, ideales para piezas pequeñas.</p></div>
+    <div class="service-card"><div class="service-num">IV</div><h3>Diseño personalizado</h3><p>Partimos de tu idea, o de un dibujo de alguien especial, y lo convertimos en tatuaje.</p></div>
+    <div class="service-card"><div class="service-num">V</div><h3>Piezas grandes</h3><p>Brazos y costados completos trabajados por sesiones.</p></div>
+    <div class="service-card"><div class="service-num">VI</div><h3>Tatuajes con significado</h3><p>Te acompañamos con calma en los tatuajes más sentimentales.</p></div>
+  </div>
+</section>
+
+<section class="portfolio" id="portafolio">
+  <div class="wrap">
+    <span class="section-tag">Trabajo real</span>
+    <h2 class="section-title">Piel que cuenta historias</h2>
+    <p class="section-desc">Algunos trabajos hechos en The Scratch. Muchos más en nuestro Instagram.</p>
+    <div class="portfolio-grid">
+      <figure><img src="maps_02.jpg" alt="Tatuaje realista de calavera con cuervo y fondo rojo" loading="lazy"></figure>
+      <figure><img src="maps_03.jpg" alt="Tatuaje realista de rostro biomecánico en costado" loading="lazy"></figure>
+      <figure><img src="maps_04.jpg" alt="Tatuaje realista de garra a color" loading="lazy"></figure>
+      <figure><img src="maps_01.jpg" alt="Tatuaje de línea fina en antebrazo" loading="lazy"></figure>
+    </div>
+    <div class="ig-line"><a class="btn btn-gold" href="https://www.instagram.com/the.scratch.tattoo/" target="_blank" rel="noopener">Más trabajos en @the.scratch.tattoo</a></div>
+  </div>
+</section>
+
+<section class="gallery" id="estudio">
+  <div class="wrap">
+    <span class="section-tag">Nuestro estudio</span>
+    <h2 class="section-title">Acogedor y profesional</h2>
+    <p class="section-desc">Desde que entras el ambiente es acogedor: te escuchamos, te asesoramos y trabajamos en un estudio muy limpio.</p>
+    <div class="gallery-grid">
+      <img src="u_t1.jpg" alt="Tatuador trabajando" loading="lazy">
+      <img src="u_t2.jpg" alt="Detalle de un tatuaje en proceso" loading="lazy">
+      <img src="u_t3.jpg" alt="Estación de trabajo del estudio" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <span class="section-tag">Por qué elegirnos</span>
+    <h2 class="section-title">Confianza y detalle</h2>
+    <div class="why-grid">
+      <div class="why-card"><h3>Te escuchamos</h3><p>Tus ideas son el punto de partida de cada diseño.</p></div>
+      <div class="why-card"><h3>Estudio muy limpio</h3><p>Higiene y cuidado en cada sesión.</p></div>
+      <div class="why-card"><h3>Buenos precios</h3><p>Trabajo de calidad a precios justos.</p></div>
+      <div class="why-card"><h3>4,8 en Google</h3><p>47 reseñas de clientes que repiten.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="wrap">
+    <span class="section-tag">Cómo empezar</span>
+    <h2 class="section-title">En 4 pasos</h2>
+    <div class="steps-grid">
+      <div class="step"><h3>Escríbenos</h3><p>Por WhatsApp o Instagram, con tu idea o una referencia.</p></div>
+      <div class="step"><h3>Te asesoramos</h3><p>Damos forma a tu idea y te damos presupuesto.</p></div>
+      <div class="step"><h3>Reservamos cita</h3><p>Buscamos el día que mejor te venga.</p></div>
+      <div class="step"><h3>Tatuamos</h3><p>Con calma, atentos a ti en todo momento.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="testimonials" id="opiniones">
+  <div class="wrap">
+    <span class="section-tag">Opiniones</span>
+    <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+    <p class="section-desc">4,8 estrellas de media con 47 reseñas en Google.</p>
+    <div class="test-grid">
+      <div class="test-card"><div class="stars">★★★★★</div><p>"Me he hecho ya varios tatuajes bastante especiales y sentimentales con Mario y estoy encantada. El estudio está muy limpio y el trato es muy profesional."</p><div class="test-name">— Ynara R.</div></div>
+      <div class="test-card"><div class="stars">★★★★★</div><p>"Quería dos tatuajes de línea fina, uno hecho por mi hija y otro diseñado por mí. Laura es magnífica."</p><div class="test-name">— Alicia A.</div></div>
+      <div class="test-card"><div class="stars">★★★★★</div><p>"Desde el primer momento el ambiente fue acogedor y profesional. Me hicieron sentir cómoda, escucharon mis ideas y me asesoraron."</p><div class="test-name">— Miriam G.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <span class="section-tag">Contacto</span>
+    <h2 class="section-title">Pide tu cita</h2>
+    <div class="contact-grid">
+      <div>
+        <div class="info-row"><span class="ic">📍</span><div><b>Dirección</b><span>C. de Cruz de Luisa, 11, 2 bis, 28945 Fuenlabrada, Madrid</span></div></div>
+        <div class="info-row"><span class="ic">📞</span><div><b>Teléfono / WhatsApp</b><a href="tel:+34619579116">619 57 91 16</a></div></div>
+        <div class="info-row"><span class="ic">📸</span><div><b>Instagram</b><a href="https://www.instagram.com/the.scratch.tattoo/" target="_blank" rel="noopener">@the.scratch.tattoo</a></div></div>
+        <div class="info-row"><span class="ic">🕐</span><div><b>Horario</b><span>Lunes a viernes: 11:00–14:00 y 16:30–21:00<br>Sábado: 11:00–14:30 · Domingo: cerrado</span></div></div>
+        <div class="contact-actions">
+          <a class="btn btn-wa" href="https://wa.me/34619579116?text=Hola!%20He%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20un%20tatuaje" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-outline" href="tel:+34619579116">Llamar</a>
+        </div>
+      </div>
+      <div class="map-embed">
+        <iframe title="Mapa de The Scratch Tattoo" src="https://www.google.com/maps?q=The+Scratch+Tattoo+C.+de+Cruz+de+Luisa+11+Fuenlabrada&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Propuesta de diseño para <strong>The Scratch Tattoo</strong> - demo, no es el sitio web oficial del negocio.</div>
+</footer>
+
+<div class="lightbox" id="lightbox"><img src="" alt=""></div>
+<a class="wa-float" href="https://wa.me/34619579116?text=Hola!%20He%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20un%20tatuaje" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3 .9.9-2.9-.2-.3C3.9 15 3.4 13.5 3.4 12c0-4.7 3.9-8.6 8.6-8.6s8.6 3.9 8.6 8.6-3.9 8.6-8.6 8.6zm4.7-6.4c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.4-1.8-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.2-.2-.2-.5-.3z"/></svg>
+</a>
+<script>
+  const lb=document.getElementById('lightbox'), lbi=lb.querySelector('img');
+  document.querySelectorAll('.portfolio-grid img').forEach(i=>i.addEventListener('click',()=>{lbi.src=i.src;lbi.alt=i.alt;lb.classList.add('open');}));
+  lb.addEventListener('click',()=>lb.classList.remove('open'));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open');});
+</script>
+</body>
+</html>
